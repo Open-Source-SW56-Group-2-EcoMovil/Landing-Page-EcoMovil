@@ -7,14 +7,41 @@
         <span class="text-xl font-bold text-green-600">Ecomovil</span>
       </a>
       <nav class="hidden md:flex space-x-6">
-        <a class="text-sm font-medium hover:text-green-600 transition-colors" routerLink="join">How It Works</a>
-        <a class="text-sm font-medium hover:text-green-600 transition-colors" routerLink="join">Who Can Use</a>
-        <a class="text-sm font-medium hover:text-green-600 transition-colors" routerLink="/join">Plans</a>
-        <a class="text-sm font-medium hover:text-green-600 transition-colors" routerLink="#">About</a>
-        <a class="text-sm font-medium hover:text-green-600 transition-colors" routerLink="#">Join</a>
+        <a routerLink="/how-it-works" routerLinkActive="active" fragment="how-it-works" class="text-sm font-medium hover:text-green-600 transition-colors">How It Works</a>
+        <a routerLink="/who" routerLinkActive="active" fragment="who" class="text-sm font-medium hover:text-green-600 transition-colors">Who Can Use</a>
+        <a routerLink="/plans" routerLinkActive="active" fragment="plans" class="text-sm font-medium hover:text-green-600 transition-colors">Plans</a>
+        <a routerLink="/about" routerLinkActive="active" fragment="about" class="text-sm font-medium hover:text-green-600 transition-colors">About</a>
+        <a routerLink="/join" routerLinkActive="active" fragment="join" class="text-sm font-medium hover:text-green-600 transition-colors">Join</a>
       </nav>
       <button class="bg-green-600 text-white hover:bg-green-700 rounded px-4 py-2">Sign Up</button>
 
     </div>
   </header>
 </section>
+
+<app-main></app-main>
+
+<section id="how-it-works">
+  <app-how-it-works></app-how-it-works>
+</section>
+
+<section id="who">
+  <app-whocanuse></app-whocanuse>
+</section>
+
+<section id="plans">
+  <app-plans></app-plans>
+</section>
+
+<section id="about">
+  <app-about></app-about>
+</section>
+
+<section id="join">
+  <app-join></app-join>
+</section>
+
+<app-footer></app-footer>
+
+
+
