@@ -12,8 +12,8 @@ import {NgClass, NgForOf} from "@angular/common";
 })
 export class PlansComponent {
   plans = [
-    { title: 'Cachimbo', price: 'Free/month then $1.99/month', features: ['Allows 2 publications per month', 'Basic assistance'], highlight: 'bg-green-600' },
-    { title: 'Universitario', price: '$5.99/month', features: ['Allows 10 publications per month', 'Prior assistance', 'featured publications'], highlight: 'bg-yellow-500' },
-    { title: 'Graduado', price: '$19.99/month', features: ['Ilimited publications', 'Assistance 24/7'], highlight: 'bg-blue-600' },
+    { title: 'Freshman', price: 'Free/month then $1.99/month', features: ['Allows 2 publications per month', 'Basic assistance'], highlight: 'bg-green-600' },
+    { title: 'Undergraduate', price: '$5.99/month', features: ['Allows 10 publications per month', 'Prior assistance', 'featured publications'], highlight: 'bg-yellow-500' },
+    { title: 'Graduate', price: '$19.99/month', features: ['Ilimited publications', 'Assistance 24/7'], highlight: 'bg-blue-600' },
   ];
 }
