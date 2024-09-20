@@ -1,4 +1,4 @@
-import {AfterViewInit, Component} from '@angular/core';
+import {AfterViewInit, Component, OnInit} from '@angular/core';
 import {NavigationEnd, Router, RouterOutlet} from '@angular/router';
 import {HeaderComponent} from "./header/header.component";
 import {MainComponent} from "./main/main.component";
@@ -19,14 +19,16 @@ import {TranslateService} from "@ngx-translate/core";
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent implements AfterViewInit {
+export class AppComponent implements OnInit {
 
-  constructor(private router: Router, translate: TranslateService) {
-    translate.setDefaultLang('en');
-    translate.use('en');
+  constructor(private router: Router, private translate: TranslateService) {
+    this.translate.setDefaultLang('en');
+
   }
 
-  ngAfterViewInit() {
+  ngOnInit() {
+
+    this.translate.use('en');
     this.router.events.subscribe((event: any) => {
       if (event instanceof NavigationEnd) {
         const fragment = this.router.parseUrl(this.router.url).fragment;
