@@ -7,6 +7,8 @@ import {HowItWorksComponent} from "../how-it-works/how-it-works.component";
 import {MainComponent} from "../main/main.component";
 import {PlansComponent} from "../plans/plans.component";
 import {WhocanuseComponent} from "../whocanuse/whocanuse.component";
+import {LanguageSwitcherComponent} from "../public/components/language-switcher/language-switcher.component";
+import {TranslateModule} from "@ngx-translate/core";
 
 
 @Component({
@@ -22,7 +24,9 @@ import {WhocanuseComponent} from "../whocanuse/whocanuse.component";
     HowItWorksComponent,
     MainComponent,
     PlansComponent,
-    WhocanuseComponent
+    WhocanuseComponent,
+    LanguageSwitcherComponent,
+    TranslateModule
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'

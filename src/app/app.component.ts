@@ -10,6 +10,7 @@ import {JoinComponent} from "./join/join.component";
 import {WhocanuseComponent} from "./whocanuse/whocanuse.component";
 import {AppRoutingModule} from "./app-routing.module";
 import {ViewportScroller} from "@angular/common";
+import {TranslateService} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-root',
@@ -20,7 +21,10 @@ import {ViewportScroller} from "@angular/common";
 })
 export class AppComponent implements AfterViewInit {
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, translate: TranslateService) {
+    translate.setDefaultLang('en');
+    translate.use('en');
+  }
 
   ngAfterViewInit() {
     this.router.events.subscribe((event: any) => {
@@ -39,4 +43,5 @@ export class AppComponent implements AfterViewInit {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   }
+
 }

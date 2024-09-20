@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
 import {NgClass, NgForOf} from "@angular/common";
+import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-plans',
   templateUrl: './plans.component.html',
   imports: [
     NgForOf,
-    NgClass
+    NgClass,
+    TranslateModule
   ],
   standalone: true
 })

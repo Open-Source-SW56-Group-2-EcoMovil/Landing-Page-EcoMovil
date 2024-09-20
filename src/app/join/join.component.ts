@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
 import {FormsModule} from "@angular/forms";
+import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-join',
   standalone: true,
   imports: [
-    FormsModule
+    FormsModule,
+    TranslateModule
   ],
   templateUrl: './join.component.html',
   styleUrl: './join.component.css'

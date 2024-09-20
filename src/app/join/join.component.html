@@ -2,12 +2,12 @@
   <div class="container mx-auto px-4 relative z-10">
     <div class="flex flex-col md:flex-row items-center justify-between">
       <div class="md:w-1/2 mb-8 md:mb-0">
-        <h2 class="text-3xl font-bold mb-4">Join Ecomovil Today</h2>
-        <p class="text-xl mb-6">Start your journey towards sustainable transportation.</p>
+        <h2 class="text-3xl font-bold mb-4">{{'join.title' | translate}}</h2>
+        <p class="text-xl mb-6">{{ 'join.journey' | translate }}</p>
         <form class="flex space-x-2" (submit)="onSubmit()">
           <input class="flex-grow bg-white text-gray-900 rounded px-4 py-2" placeholder="Enter your email" type="email" [(ngModel)]="email" name="email" required/>
           <button type="submit" class="bg-white text-green-600 hover:bg-green-100 rounded px-4 py-2">
-            Sign Up
+            {{ 'join.register' | translate }}
           </button>
         </form>
       </div>

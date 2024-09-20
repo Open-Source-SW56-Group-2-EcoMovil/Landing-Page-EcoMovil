@@ -12,12 +12,13 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import {NgForOf} from "@angular/common";
 import {group} from "@angular/animations";
+import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-how-it-works',
   templateUrl: './how-it-works.component.html',
   standalone: true,
-  imports: [FaIconComponent, NgForOf]
+  imports: [FaIconComponent, NgForOf, TranslateModule]
 })
 export class HowItWorksComponent {
   constructor() {
