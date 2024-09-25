@@ -32,6 +32,9 @@ import {TranslateModule} from "@ngx-translate/core";
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
+  redirectToExternalPage(){
+    window.location.href = 'https://happy-tree-09edbd910.5.azurestaticapps.net';
+  }
   constructor(private router: Router) {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {

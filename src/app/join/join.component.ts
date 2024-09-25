@@ -14,6 +14,9 @@ import {TranslateModule} from "@ngx-translate/core";
 })
 export class JoinComponent {
   email: string = '';
+  redirectToExternalPage(){
+    window.location.href = 'https://happy-tree-09edbd910.5.azurestaticapps.net';
+  }
 
   onSubmit() {
     if (this.email){

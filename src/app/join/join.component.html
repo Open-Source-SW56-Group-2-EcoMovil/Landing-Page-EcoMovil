@@ -6,7 +6,7 @@
         <p class="text-xl mb-6">{{ 'join.journey' | translate }}</p>
         <form class="flex space-x-2" (submit)="onSubmit()">
           <input class="flex-grow bg-white text-gray-900 rounded px-4 py-2" placeholder="Enter your email" type="email" [(ngModel)]="email" name="email" required/>
-          <button type="submit" class="bg-white text-green-600 hover:bg-green-100 rounded px-4 py-2">
+          <button (click)="redirectToExternalPage()"  type="submit" class="bg-white text-green-600 hover:bg-green-100 rounded px-4 py-2">
             {{ 'join.register' | translate }}
           </button>
         </form>
