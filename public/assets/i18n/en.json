@@ -24,7 +24,21 @@
     "mail": "mail: Ecomovil.gmail.com"
   },
   "how-it-works": {
-    "title": "How it Works"
+    "title": "How it Works",
+    "steps": {
+      "listYourRide": {
+        "title": "List Your Ride",
+        "description": "Easily list your bike, rollerskates, or skates for sale or rent."
+      },
+      "connect": {
+        "title": "Connect",
+        "description": "Join our forum to discuss, share tips, and meet other riders."
+      },
+      "earnBadges": {
+        "title": "Earn Badges",
+        "description": "Get recognized for your activity with exclusive profile badges."
+      }
+    }
   },
   "join": {
     "title": "Join Ecomovil Today",
@@ -38,7 +52,32 @@
   },
   "plans": {
     "choose": "Choose your plan",
-    "chooseplan": "Choose Plan"
+    "chooseplan": "Choose Plan",
+    "freshman": {
+      "title": "Freshman",
+      "price": "Free/month then $1.99/month",
+      "features": {
+        "publications": "Allows 2 publications per month",
+        "assistance": "Basic assistance"
+      }
+    },
+    "undergraduate": {
+      "title": "Undergraduate",
+      "price": "$5.99/month",
+      "features": {
+        "publications": "Allows 10 publications per month",
+        "assistance": "Prior assistance",
+        "featuredPublications": "Featured publications"
+      }
+    },
+    "graduate": {
+      "title": "Graduate",
+      "price": "$19.99/month",
+      "features": {
+        "publications": "Ilimited publications",
+        "assistance": "Assistance 24/7"
+      }
+    }
   },
   "whocanuse": {
     "title": "Who can use Ecomovil?",

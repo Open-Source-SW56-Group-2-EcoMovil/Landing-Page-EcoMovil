@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import {NgClass, NgForOf} from "@angular/common";
 import {TranslateModule} from "@ngx-translate/core";
+import { TranslateService } from '@ngx-translate/core';
+
 
 @Component({
   selector: 'app-plans',
@@ -13,9 +15,47 @@ import {TranslateModule} from "@ngx-translate/core";
   standalone: true
 })
 export class PlansComponent {
-  plans = [
-    { title: 'Freshman', price: 'Free/month then $1.99/month', features: ['Allows 2 publications per month', 'Basic assistance'], highlight: 'bg-green-600' },
-    { title: 'Undergraduate', price: '$5.99/month', features: ['Allows 10 publications per month', 'Prior assistance', 'featured publications'], highlight: 'bg-yellow-500' },
-    { title: 'Graduate', price: '$19.99/month', features: ['Ilimited publications', 'Assistance 24/7'], highlight: 'bg-blue-600' },
-  ];
+  plans: any[] = [];
+
+  constructor(private translate: TranslateService) {
+    this.translate.onLangChange.subscribe(() => {
+      this.loadPlans();
+    });
+
+    this.loadPlans();
+  }
+
+  loadPlans() {
+    this.plans = [
+      {
+        title: this.translate.instant('plans.freshman.title'),
+        price: this.translate.instant('plans.freshman.price'),
+        features: [
+          this.translate.instant('plans.freshman.features.publications'),
+          this.translate.instant('plans.freshman.features.assistance')
+        ],
+        highlight: 'bg-green-600'
+      },
+      {
+        title: this.translate.instant('plans.undergraduate.title'),
+        price: this.translate.instant('plans.undergraduate.price'),
+        features: [
+          this.translate.instant('plans.undergraduate.features.publications'),
+          this.translate.instant('plans.undergraduate.features.assistance'),
+          this.translate.instant('plans.undergraduate.features.featuredPublications')
+        ],
+        highlight: 'bg-yellow-500'
+      },
+      {
+        title: this.translate.instant('plans.graduate.title'),
+        price: this.translate.instant('plans.graduate.price'),
+        features: [
+          this.translate.instant('plans.graduate.features.publications'),
+          this.translate.instant('plans.graduate.features.assistance')
+        ],
+        highlight: 'bg-blue-600'
+      }
+    ];
+  }
 }
+

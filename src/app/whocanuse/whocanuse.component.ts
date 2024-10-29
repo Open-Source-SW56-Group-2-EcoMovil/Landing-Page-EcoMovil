@@ -5,6 +5,7 @@ import {MatCheckboxModule} from "@angular/material/checkbox";
 import {TranslateModule} from "@ngx-translate/core";
 
 
+// @ts-ignore
 @Component({
   selector: 'app-whocanuse',
   standalone: true,

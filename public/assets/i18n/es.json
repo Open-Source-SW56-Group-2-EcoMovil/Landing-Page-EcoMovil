@@ -24,7 +24,21 @@
     "mail": "Correo: Ecomovil.gmail.com"
   },
   "how-it-works": {
-    "title": "Cómo funciona"
+    "title": "Cómo funciona",
+    "steps": {
+      "listYourRide": {
+        "title": "Publica tu vehículo",
+        "description": "Lista fácilmente tu bicicleta, patines o monopatines para la venta o alquiler."
+      },
+      "connect": {
+        "title": "Conéctate",
+        "description": "Únete a nuestro foro para discutir, compartir consejos y conocer a otros ciclistas."
+      },
+      "earnBadges": {
+        "title": "Gana Insignias",
+        "description": "Obtén reconocimiento por tu actividad con insignias exclusivas de perfil."
+      }
+    }
   },
   "join": {
     "title": "Unete a Ecomovil hoy",
@@ -38,7 +52,33 @@
   },
   "plans": {
     "choose": "Elige tu plan",
-    "chooseplan": "Elige Plan"
+    "chooseplan": "Elige Plan",
+    "freshman": {
+      "title": "Cachimbo",
+      "price": "Gratis/mes y luego $1.99/mes",
+      "features": {
+        "publications": "Permite 2 publicaciones por mes",
+        "assistance": "Asistencia básica"
+      }
+    },
+    "undergraduate": {
+      "title": "Universitario",
+      "price": "$5.99/mes",
+      "features": {
+        "publications": "Permite 10 publicaciones por mes",
+        "assistance": "Asistencia prioritaria",
+        "featuredPublications": "Publicaciones destacadas"
+      }
+    },
+    "graduate": {
+      "title": "Graduado",
+      "price": "$19.99/mes",
+      "features": {
+        "publications": "Publicaciones ilimitadas",
+        "assistance": "Asistencia 24/7"
+      }
+    }
+
   },
   "whocanuse": {
     "title": "Quien puede usar Ecomovil?",
