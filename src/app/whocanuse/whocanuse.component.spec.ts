@@ -10,7 +10,7 @@ describe('WhocanuseComponent', () => {
     await TestBed.configureTestingModule({
       imports: [WhocanuseComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(WhocanuseComponent);
     component = fixture.componentInstance;

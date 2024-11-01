@@ -14,9 +14,9 @@ import {TranslateModule} from "@ngx-translate/core";
   styleUrl: './whocanuse.component.css'
 })
 export class WhocanuseComponent {
-    redirectToExternalPage1() {
-  window.location.href = '  https://happy-tree-09edbd910.5.azurestaticapps.net/registerUniversity';
-}
+  redirectToExternalPage1() {
+    window.location.href = '  https://happy-tree-09edbd910.5.azurestaticapps.net/registerUniversity';
+  }
   redirectToExternalPage2() {
     window.location.href = '  https://happy-tree-09edbd910.5.azurestaticapps.net/registerAcquirer';
   }
