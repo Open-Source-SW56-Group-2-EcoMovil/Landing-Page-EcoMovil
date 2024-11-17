@@ -2,28 +2,19 @@
   <div class="container mx-auto px-4 relative z-10">
     <div class="flex flex-col md:flex-row items-center justify-between">
       <div class="md:w-1/2 mb-8 md:mb-0">
-        <h2 class="text-3xl font-bold mb-4">Join Ecomovil Today</h2>
-        <p class="text-xl mb-6">Start your journey towards sustainable transportation.</p>
+        <h2 class="text-3xl font-bold mb-4">{{ 'join.title' | translate }}</h2>
+        <p class="text-xl mb-6">{{ 'join.journey' | translate }}</p>
         <form class="flex space-x-2" (submit)="onSubmit()">
-          <!-- Asumiendo que Input es un componente personalizado de Angular -->
-          <input class="flex-grow bg-white text-gray-900 rounded px-4 py-2" placeholder="Enter your email" type="email" [(ngModel)]="email" name="email" required/>
-          <!-- Asumiendo que Button es un componente personalizado de Angular -->
-          <button type="submit" class="bg-white text-green-600 hover:bg-green-100 rounded px-4 py-2">
-            Sign Up
-            <!-- Asumiendo que ArrowRight es un componente personalizado de Angular -->
-            <!-- flecha derecha
-            <app-arrow-right class="ml-2 h-4 w-4"></app-arrow-right>-->
+          <input class="flex-grow bg-white text-gray-900 rounded px-4 py-2" type="email" [(ngModel)]="email" name="email" required/>
+          <button (click)="redirectToExternalPage()" type="submit" class="bg-white text-green-600 hover:bg-green-100 rounded px-4 py-2">
+            {{ 'join.register' | translate }}
           </button>
         </form>
       </div>
       <div class="md:w-1/2 flex justify-center">
         <div class="relative">
           <div class="absolute inset-0 bg-white/20 backdrop-blur-md transform -rotate-6 rounded-lg"></div>
-          <img
-            src="/happypeoplebike.jpg?height=300&width=300"
-            alt="Happy students using StudentRides"
-            class="relative z-10 rounded-lg shadow-lg"
-          />
+          <img src="./happypeoplebike.jpg" class="relative z-10 rounded-lg shadow-lg"/>
         </div>
       </div>
     </div>
